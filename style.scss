@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Roboto:wght@300&display=swap');
+
+
+body {
+    background-color: violet;
+    font-family: 'Roboto', sans-serif;
+}
+h2, h3 {
+    font-family: 'Irish Grover', cursive
+}
+
+
+//*header
+header {
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    h2 {
+        width: 60%;
+    }
+    img {
+        width: 30%;
+    }
+}
+//Main, tragos
+
+h1{
+    display: none;
+}
+
+h3 {
+    font-size: 4em;
+    text-align: center;
+    border-bottom: 5px double black;
+    margin-bottom: 3%;
+}
+
+section {
+    article{
+      background-color: whitesmoke;
+      margin: 1%;
+      padding: 1%;
+      display: block; 
+
+      
+      
+      .descripcion {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: 20px;
+          ul {
+              font-size: 2.3em;
+              text-align: center;
+              list-style: none;
+              text-decoration: underline black;
+              border-bottom:3px double black;
+              margin-bottom: 3%;
+          }
+          p {
+              font-size: 2.7em;
+              text-align: center;
+          }
+          img {
+              width: 500px;
+              border-radius: 20px;
+              box-shadow: rgba(0, 0, 0, 0.418) 10px 10px;
+           }
+        }
+    }
+}
+footer{
+    background: black;
+    text-align: center;
+    height: auto;
+    font-size: 1em;
+    justify-content: center;
+    color: white;
+    a {
+        text-decoration: none;
+        color: rgb(143, 22, 180);
+    }
+    a:hover{
+        color: grey;
+    }
+}
+
+//media queries 
+@media (max-width:480px) {
+    body{
+        header{
+            justify-content: center;
+            .logoSc{
+                width: 50%;
+            }
+            h2 {
+                width: 50%;
+                font-size: 1.1em;
+                text-align: center;
+            }
+        }
+        font-size: 1.2em;
+        article{
+            h3 {
+                font-size: 2em;
+                margin-bottom: 2%;
+                border-bottom: 5px double black;
+            }
+            .descripcion{
+                display: block;
+                text-align: center;
+                ul {
+                    margin-bottom: 5%;
+                    font-size: 1.3em;
+                }
+                p {
+                    font-size: 1.3em;
+                    margin-bottom: 3%;
+                    text-align: justify;
+                }
+                .photo {
+                    justify-content: center;
+                    width: 300px;
+                }
+            }
+            
+        }
+    }
+}
+ @media (min-width:768px) {
+    body{
+        header{
+            justify-content: center;
+            .logoSc{
+                width: 50%;
+            }
+            h2 {
+                width: 40%;
+                font-size: 1.1em;
+                text-align: center;
+            }
+        }
+        font-size: 1.2em;
+        article{
+            h3 {
+                font-size: 2em;
+                margin-bottom: 2%;
+                border-bottom: 5px double black;
+            }
+            .descripcion{
+                display: block;
+                text-align: center;
+                ul {
+                    margin-bottom: 5%;
+                    font-size: 1.4em;
+                }
+                p {
+                    font-size: 1.3em;
+                    margin-bottom: 3%;
+                    text-align: justify;
+                }
+                .photo {
+                    justify-content: center;
+                    width: 500px;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (min-width: 1279px){
+        
+    header {
+        background-color: black;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        h2 {
+            width: 60%;
+        }
+        img {
+            width: 30%;
+        }
+    }
+    //Main, tragos
+    h1{
+        display: none;
+    }
+
+    h3 {
+        font-size: 4em;
+        text-align: center;
+        border-bottom: 5px double black;
+        margin-bottom: 3%;
+    }
+
+    section {
+        article{
+        background-color: whitesmoke;
+        margin: 1%;
+        padding: 1%;
+        display: block; 
+
+        
+        
+        .descripcion {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 20px;
+            ul {
+                font-size: 1.8em;
+                text-align: center;
+                list-style: none;
+                text-decoration: underline black;
+                border-bottom:3px double black;
+                margin-bottom: 3%;
+            }
+            p {
+                font-size: 2em;
+                text-align: center;
+            }
+            img {
+                width: 500px;
+                border-radius: 20px;
+                box-shadow: rgba(0, 0, 0, 0.418) 10px 10px;
+            }
+            }
+        }
+    }
+}
